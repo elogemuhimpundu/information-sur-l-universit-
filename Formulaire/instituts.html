@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instituts - Université</title>
+  <style>
+    body { 
+        margin: 0; 
+        font-family: Arial, sans-serif; 
+        background-color: #f4f4f4; 
+    }
+    header { 
+      background-color: #4e54c8; 
+        color: white; 
+        padding: 1rem; text-align: center; 
+      }
+    nav { background-color: #333;
+       padding: 1rem; 
+       text-align: center; 
+      }
+    nav a 
+    { color: white;
+       margin: 0 1rem; 
+       text-decoration: none; 
+       font-weight: bold; 
+      }
+    nav a:hover { 
+      text-decoration: underline;
+     }
+    main {
+       padding: 2rem; 
+      }
+    h2 { text-align: center;
+       color: #333; 
+      }
+    .instituts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .institut-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .institut-card h3 { color: #4e54c8; margin-top: 0; }
+    .institut-card p { color: #555; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header><h1>Nos Instituts</h1></header>
+
+  <nav>
+    <a href="home.html">Accueil</a>
+    <a href="facultes.html">Facultés</a>
+    <a href="instituts.html">Instituts</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Liste des Instituts</h2>
+    <div class="instituts-container">
+      <div class="institut-card">
+        <h3>Institut de Technologie</h3>
+        <p>Formations en informatique, électronique et génie logiciel.</p>
+      </div>
+      <div class="institut-card">
+        <h3>Institut des Sciences de la Santé</h3>
+        <p>Spécialisé en santé publique, nutrition, kinésithérapie.</p>
+      </div>
+      <div class="institut-card">
+        <h3>Institut de Gestion</h3>
+        <p>Gestion des entreprises, management et comptabilité.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

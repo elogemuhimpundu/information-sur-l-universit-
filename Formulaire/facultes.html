@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facultés - Université</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4e54c8;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .faculties-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .faculty-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .faculty-card h3 {
+      margin-top: 0;
+      color: #4e54c8;
+    }
+
+    .faculty-card p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Facultés de l’Université</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Accueil</a>
+    <a href="facultes.html">Facultés</a>
+    <a href="instituts.html">Instituts</a>
+    <a href="actualites.html">Actualités</a>
+  </nav>
+
+  <main>
+    <h2>Liste des Facultés</h2>
+    <div class="faculties-container">
+      <div class="faculty-card">
+        <h3>Faculté des Sciences</h3>
+        <p>Offre des programmes en mathématiques, physique, chimie et biologie.</p>
+      </div>
+      <div class="faculty-card">
+        <h3>Faculté de Médecine</h3>
+        <p>Forme les futurs médecins, pharmaciens et professionnels de la santé.</p>
+      </div>
+      <div class="faculty-card">
+        <h3>Faculté de Droit</h3>
+        <p>Spécialisée en droit public, droit privé, droit international et plus.</p>
+      </div>
+      <div class="faculty-card">
+        <h3>Faculté des Lettres et Langues</h3>
+        <p>Étudie les langues, la littérature, la linguistique et la culture.</p>
+      </div>
+      <div class="faculty-card">
+        <h3>Faculté des Sciences économiques</h3>
+        <p>Propose des formations en économie, gestion et finance.</p>
+      </div>
+      <div class="faculty-card">
+        <h3>Faculté de Technologie</h3>
+        <p>Ingénierie, génie civil, informatique et innovations technologiques.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
